@@ -470,10 +470,15 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
                   const SizedBox(width: 4),
                 ],
                 if (widget.showCountryFlag) ...[
-                  Image.asset(
-                    'assets/flags/${_selectedCountry.code.toLowerCase()}.png',
-                    package: 'intl_phone_field',
-                    width: 32,
+                  CircleAvatar(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(100),
+                      child: Image.asset(
+                        'assets/flags/${_selectedCountry.code.toLowerCase()}.png',
+                        package: 'intl_phone_field',
+                        width: 32,
+                      ),
+                    ),
                   ),
                   const SizedBox(width: 8),
                 ],
