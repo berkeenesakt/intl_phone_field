@@ -476,6 +476,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
                       package: 'intl_phone_field',
                       width: 22,
                       height: 22,
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(width: 8),
